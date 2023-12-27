@@ -1,0 +1,14 @@
+section{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.logoImg{
+    width: 25%;
+}
+
+@media all and (max-width: 567px){
+    .logoImg{
+        width: 75%;
+    }
+}
