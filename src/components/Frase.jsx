@@ -1,20 +1,20 @@
 import { Container } from "react-bootstrap";
 import MoeImage from "../image/moe.png";
 
-export default function Frase() {
+export default function Frase({personaje}) {
   return (
     <Container>
-      <h2 className="text-center">Moe Szyslak</h2>
+      <h2 className="text-center">{personaje.character}</h2>
       <hr></hr>
       <div className="d-flex justify-content-center">
-        <img src={MoeImage} alt="Moe Szyslak"/>
+        <img src={personaje.image} alt={personaje.character + " avatar"}/>
       </div>
-      <div className="bg-light p-4 text-center">
+      <div className="bg-light p-4 text-center my-3">
         <p className="fs-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, reprehenderit beatae obcaecati animi minima explicabo asperiores quas eligendi vero cum deserunt quae izpsam inventore repellendus amet itaque, libero fuga enim.
+            {personaje.quote}
         </p>
         <p className="fs-5">
-            Moe Szyslak in The Simpson
+            {personaje.character} in The Simpson
         </p>    
       </div>
     </Container>

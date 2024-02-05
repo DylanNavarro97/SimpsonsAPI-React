@@ -26,7 +26,7 @@ function App() {
       </div>
       <Frase personaje={personaje}></Frase>
       <div className="d-flex justify-content-center">
-        <Button variant="warning" className="my-4">
+        <Button variant="warning" onClick={consultarAPI} className="my-4">
           Obtener frase
         </Button>
       </div>
