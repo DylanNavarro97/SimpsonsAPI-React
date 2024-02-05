@@ -3,7 +3,7 @@ import MoeImage from "../image/moe.png";
 
 export default function Frase() {
   return (
-    <Container className="border border-2 border-danger p-5">
+    <Container>
       <h2 className="text-center">Moe Szyslak</h2>
       <hr></hr>
       <div className="d-flex justify-content-center">
